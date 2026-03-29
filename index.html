@@ -1,42 +1,211 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Abukhayr Snack Bar — Fresh bites, juices, and sweet delights in Hargeisa." />
+  <title>Abukhayr Snack Bar | Hargeisa</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <a class="skip-link" href="#home">Skip to content</a>
 
-    <section class="hero">
-        <img src="images/logo.jpeg" alt="Logo">
-        <h1>Welcome to Our Website</h1>
-        <p>This is a hero section</p>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#home">
+        <img class="brand__logo" src="images/logo.jpeg" alt="Abukhayr Snack Bar logo" width="40" height="40" />
+        <span class="brand__text">Abukhayr Snack Bar</span>
+      </a>
+
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="navLinks">
+        <span class="sr-only">Toggle menu</span>
+        <span class="hamburger" aria-hidden="true"></span>
+      </button>
+
+      <div class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#location">Location</a>
+        <a href="#contact">Contact</a>
+        <a class="btn btn--small btn--whatsapp"
+           href="https://wa.me/252633145555?text=Hello%20I%20want%20to%20order"
+           target="_blank" rel="noopener">
+          Order
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <section class="hero section">
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="badge">Made Fresh Daily • Hargeisa</p>
+          <h1>Fresh Bites &amp; Sweet Delights in Hargeisa</h1>
+          <p class="lead">Sandwiches, Juices, Desserts &amp; More – Made Fresh Daily</p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary btn--whatsapp"
+               href="https://wa.me/252633145555?text=Hello%20I%20want%20to%20order"
+               target="_blank" rel="noopener">
+              Order on WhatsApp
+            </a>
+            <a class="btn btn--ghost" href="#menu">View Menu</a>
+          </div>
+
+          <ul class="hero__highlights" aria-label="Highlights">
+            <li>Fresh ingredients</li>
+            <li>Fast takeaway</li>
+            <li>Friendly service</li>
+          </ul>
+        </div>
+
+        <div class="hero__media">
+          <img
+            class="hero__img"
+            src="images/second 2m by 1.5 bilboard copy.jpg.jpeg"
+            alt="Abukhayr Snack Bar food banner"
+            loading="eager"
+            decoding="async"
+          />
+          <div class="hero__card" aria-hidden="true">
+            <strong>Open</strong>
+            <span>8 AM – 10 PM</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__bg" aria-hidden="true"></div>
     </section>
 
-    <section class="menu-cards">
-        <div class="card">
-            <img src="images/logo.jpeg" alt="Menu Item 1">
-            <h2>Menu Item 1</h2>
-            <p>Description for menu item 1.</p>
+    <section class="section" id="about">
+      <div class="container two-col">
+        <div class="two-col__text reveal">
+          <h2>About Abukhayr Snack Bar</h2>
+          <p>
+            Abukhayr Snack Bar is your neighborhood spot for fresh, flavorful takeaway in Hargeisa.
+            We focus on quality ingredients, made-to-order sandwiches, organic juices, and sweet desserts—
+            offering a tasty variety for every mood.
+          </p>
+
+          <div class="pill-row" aria-label="Values">
+            <span class="pill">Fresh</span>
+            <span class="pill">Quality</span>
+            <span class="pill">Variety</span>
+          </div>
         </div>
-        <div class="card">
-            <img src="images/logo.jpeg" alt="Menu Item 2">
-            <h2>Menu Item 2</h2>
-            <p>Description for menu item 2.</p>
+
+        <div class="two-col__media reveal">
+          <img
+            class="rounded"
+            src="images/special1.jpg"
+            alt="Fresh food at Abukhayr Snack Bar"
+            loading="lazy"
+            decoding="async"
+          />
         </div>
+      </div>
     </section>
 
-    <script src="script.js"></script>
+    <section class="section section--tint" id="menu">
+      <div class="container">
+        <div class="section__head">
+          <h2>Menu</h2>
+          <p class="muted">Clean, simple, and delicious — explore our categories.</p>
+        </div>
+
+        <div class="menu-grid" id="menuGrid" aria-label="Menu categories"></div>
+      </div>
+    </section>
+
+    <section class="section" id="location">
+      <div class="container two-col">
+        <div class="two-col__text reveal">
+          <h2>Location</h2>
+          <p class="location__line"><strong>Masalaha, Ciir Mall, Hargeisa</strong></p>
+          <p class="muted">
+            Easy to reach: head to Ciir Mall in Masalaha and look for Abukhayr Snack Bar inside.
+            If you’re nearby, message us on WhatsApp and we’ll guide you.
+          </p>
+
+          <div class="directions">
+            <h3 class="h4">Simple directions</h3>
+            <ol>
+              <li>Go to Masalaha area.</li>
+              <li>Enter Ciir Mall.</li>
+              <li>Ask for “Abukhayr Snack Bar” (takeaway counter).</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="two-col__media reveal">
+          <div class="map">
+            <img
+              class="map__img"
+              src="images/checking sandwitch.webp"
+              alt="Map placeholder"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="map__badge" aria-hidden="true">Ciir Mall • Masalaha</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--tint" id="contact">
+      <div class="container contact">
+        <div class="contact__card reveal">
+          <h2>Contact</h2>
+
+          <div class="contact__row">
+            <div>
+              <p class="muted">Phone / WhatsApp</p>
+              <p class="contact__big">0633145555</p>
+            </div>
+            <div>
+              <p class="muted">Opening hours</p>
+              <p class="contact__big">8 AM – 10 PM</p>
+            </div>
+          </div>
+
+          <a class="btn btn--primary btn--whatsapp btn--block"
+             href="https://wa.me/252633145555?text=Hello%20I%20want%20to%20order"
+             target="_blank" rel="noopener">
+            Order Now on WhatsApp
+          </a>
+
+          <p class="tiny muted">
+            Tip: add your order details (items + quantity) and we’ll confirm quickly.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid reveal">
+      <div>
+        <div class="footer__brand">Abukhayr Snack Bar</div>
+        <p class="muted">Fresh bites, organic juices, and sweet delights — made daily in Hargeisa.</p>
+      </div>
+
+      <div>
+        <h3 class="h4">Social</h3>
+        <div class="social">
+          <a href="#" aria-label="Facebook (placeholder)">Facebook</a>
+          <a href="#" aria-label="Instagram (placeholder)">Instagram</a>
+          <a href="#" aria-label="TikTok (placeholder)">TikTok</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <small>© <span id="year"></span> Abukhayr Snack Bar. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
