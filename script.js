@@ -6,8 +6,8 @@ const MENU = [
   { title: "Coffee and Tea", icon: "☕", img: "images/coffee.png" },
   { title: "Mini Pancakes", icon: "🥞", img: "images/minipancakes2.png" },
   { title: "Waffles", icon: "🧇", img: "images/pancake.jpg" },
-  { title: "Crepes", icon: "🍯", img: "images/sandwich with Toas.png" },
-  { title: "Basbousa", icon: "🍰", img: "images/special1.jpg" },
+  { title: "Crepes", icon: "🍯", img: "images/crepe2.webp" },
+  { title: "Basbousa", icon: "🍰", img: "images/basbousa.jpg" },
 ];
 
 function renderMenu(){
