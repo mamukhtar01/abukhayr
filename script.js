@@ -1,13 +1,13 @@
 const MENU = [
-  { title: "Chicken Sandwiches", icon: "🥪", img: "images/Grilled-Chicken-Sandwich-Recipe1.jpg" },
-  { title: "Meat Sandwiches", icon: "🥩", img: "images/Meat Sandwich.jpg" },
-  { title: "Tuna Sandwiches", icon: "🐟", img: "images/Tuna Sandwich.jpg" },
-  { title: "Organic Juices", icon: "🥤", img: "images/orange.jpg" },
-  { title: "Coffee and Tea", icon: "☕", img: "images/coffee.png" },
-  { title: "Mini Pancakes", icon: "🥞", img: "images/minipancakes2.png" },
-  { title: "Waffles", icon: "🧇", img: "images/pancake.jpg" },
-  { title: "Crepes", icon: "🍯", img: "images/crepe2.webp" },
-  { title: "Basbousa", icon: "🍰", img: "images/basbousa.jpg" },
+  { title: "Chicken Sandwiches", icon: "🥪", img: "images/Grilled-Chicken-Sandwich-Recipe1.jpg", description: "Fresh grilled chicken in soft bread." },
+  { title: "Meat Sandwiches", icon: "🥩", img: "images/Meat Sandwich.jpg", description: "Tender meat sandwiches with bold flavor." },
+  { title: "Tuna Sandwiches", icon: "🐟", img: "images/Tuna Sandwich.jpg", description: "Light and tasty tuna made fresh." },
+  { title: "Organic Juices", icon: "🥤", img: "images/orange.jpg", description: "Natural fruit juices." },
+  { title: "Coffee and Tea", icon: "☕", img: "images/coffee.png", description: "Hot drinks for every mood." },
+  { title: "Mini Pancakes", icon: "🥞", img: "images/minipancakes2.png", description: "Soft mini pancakes with sweet toppings." },
+  { title: "Waffles", icon: "🧇", img: "images/pancake.jpg", description: "Crispy waffles with rich taste." },
+  { title: "Crepes", icon: "🍯", img: "images/crepe2.webp", description: "Thin crepes with your favorite filling." },
+  { title: "Basbousa", icon: "🍰", img: "images/basbousa.jpg", description: "Delicious basbousa, soft and sweet." },
 ];
 
 function renderMenu(){
@@ -24,7 +24,7 @@ function renderMenu(){
           <h3>${c.title}</h3>
           <div class="menu-card__icon" aria-hidden="true">${c.icon}</div>
         </div>
-        <p class="muted">Delicious, fresh, and made to order. (Dummy description text)</p>
+        <p class="muted">${c.description}</p>
       </div>
     `;
     grid.appendChild(article);
